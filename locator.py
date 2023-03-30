@@ -1,7 +1,7 @@
 from geoip import geolite2
 import socket
 
-hostname = input("Plz Enter the Website URL(www.site.com, without https): ")
+hostname = input("Enter the Website URL(www.site.com): ")
 
 ip = socket.gethostbyname(hostname)
 locator = geolite2.lookup(ip)
